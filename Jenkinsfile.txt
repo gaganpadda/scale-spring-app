@@ -31,8 +31,8 @@ pipeline {
         }
         stage('Code Scan') {
             steps {
-                withSonarQubeEnv('gagan-sonarqube') {
-                    sh 'mvn  -Dsonar.projectKey=gaganpadda_amex-api -Dsonar.organization=gaganpadda org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
+                withSonarQubeEnv('SonarQube') {
+                    sh 'mvn  -Dsonar.projectKey=gaganpadda_scale-spring-app -Dsonar.organization=gaganpadda org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
                 }
                
             }
