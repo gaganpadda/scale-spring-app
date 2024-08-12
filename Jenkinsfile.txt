@@ -2,7 +2,7 @@ pipeline {
     agent {label 'master'}
     tools{
         jdk 'jdk'
-        maven 'maven'
+        maven 'maven3.9'
     }
     environment {
         CHEIF_AUTHOR = 'Asher'
