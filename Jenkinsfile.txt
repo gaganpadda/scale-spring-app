@@ -32,7 +32,7 @@ pipeline {
         stage('Code Scan') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    sh 'mvn  -Dsonar.projectKey=gaganpadda_scale-spring-app -Dsonar.organization=gaganpadda org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
+                    sh 'mvn  -Dsonar.projectKey=scale-spring-app'
                 }
                
             }
